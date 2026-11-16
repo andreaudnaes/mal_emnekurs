@@ -1,25 +1,26 @@
 /* Identitet: Times New Roman på hvit bakgrunn, avrundede kort og myke skygger.
-   Figurene bruker #6D2E46 og #A23B5B med nyanser.
+   Fargene settes her. Blått er valg, lenker og knapper. Grønt er riktig, rødt er feil, gult er usikkert.
    Hver bokstype har én fast farge, definert under «Fast farge per bokstype». Bruk alltid klassen, aldri en egen farge. */
 :root{
- --bg:#FFFFFF;--panel:#FFFFFF;--panel2:#FAF1F4;--ink:#2A1019;--mut:#6A4A56;--line:#EADCE1;
- --acc:#A23B5B;--opt:#6D2E46;--amb:#843350;--good:#6D2E46;--bad:#A23B5B;
- --c1:#6D2E46;--c2:#C4698A;--c3:#A23B5B;--c4:#3A1524;--c5:#A98794;
- --accbg:#F6E4EA;--optbg:#EBD0DA;--ambbg:#FBF0F3;--goodbg:#EBD0DA;--badbg:#F9E3EA;
+ --bg:#FFFFFF;--panel:#FFFFFF;--panel2:#F4F6FA;--ink:#1B2130;--mut:#5A6272;--line:#E1E5EC;
+ --acc:#2F5BD3;--opt:#1F3A8A;--amb:#A16207;--good:#15803D;--bad:#B91C1C;
+ /* Farger til kurver og figurer: blå, oransje, grønn, lilla, og grå til referanselinjer */
+ --c1:#2F5BD3;--c2:#E0531F;--c3:#12946F;--c4:#7A4FD0;--c5:#9AA3B2;
+ --accbg:#E5ECFC;--optbg:#DCE5F8;--ambbg:#FDF6DC;--goodbg:#E4F5E9;--badbg:#FBE9E9;
  /* Fast farge per bokstype */
- --why:#75407F;--why-bg:#F6EEF7;     /* Hvorfor: plomme */
- --key:#6D2E46;                      /* Regel og hovedpoeng: burgunder, fylt */
- --ana:#A23B5B;--ana-bg:#FCEDF1;     /* Analogi: rosa */
- --trap:#B4472E;--trap-bg:#FCEBE4;   /* Felle og feil i kilder: terrakotta */
- --exam:#8F5A17;--exam-bg:#FBF2E1;   /* Eksamenstips: kobber */
- --ex:#77605B;--ex-bg:#F5F0EC;       /* Regneeksempel: gråbrun */
- --goal:#4A2C4F;--goal-bg:#EFE9F0;   /* Mål og orientering: aubergine */
- --wg:#5A5285;--wg-bg:#EFEDF6;       /* Interaktiv figur: skumringsfiolett */
- --chk:#93356F;--chk-bg:#F9E9F3;     /* Test: bær */
+ --why:#7A4FD0;--why-bg:#F2ECFC;     /* Hvorfor: lilla */
+ --key:#1F3A8A;                      /* Regel og hovedpoeng: marineblå, fylt */
+ --ana:#0F8A6A;--ana-bg:#E5F6F0;     /* Analogi: grønn */
+ --trap:#C2410C;--trap-bg:#FDF0E6;   /* Felle og feil i kilder: oransje */
+ --exam:#B91C4B;--exam-bg:#FCEBF0;   /* Eksamenstips: rød */
+ --ex:#0E7490;--ex-bg:#E3F4F8;       /* Regneeksempel: turkis */
+ --goal:#475569;--goal-bg:#EEF1F5;   /* Mål og orientering: skifergrå */
+ --wg:#2F5BD3;--wg-bg:#E8EEFB;       /* Interaktiv figur: blå */
+ --chk:#A16207;--chk-bg:#FDF6DC;     /* Test: gul */
  --sans:"Times New Roman",Times,serif;--cond:var(--sans);--mono:var(--sans);
  --r:18px;--rs:12px;
- --sh:0 1px 3px rgba(109,46,70,.07),0 6px 22px rgba(109,46,70,.09);
- --sh2:0 2px 6px rgba(109,46,70,.1),0 12px 30px rgba(109,46,70,.14);
+ --sh:0 1px 3px rgba(31,58,138,.07),0 6px 22px rgba(31,58,138,.09);
+ --sh2:0 2px 6px rgba(31,58,138,.1),0 12px 30px rgba(31,58,138,.14);
  color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -87,7 +88,7 @@ b,strong{font-weight:700}
 .why p:first-of-type,.exam p:first-of-type,.trap p:first-of-type,.ex p:first-of-type,.key p:first-of-type,.ana p:first-of-type,.goal p:first-of-type{margin-top:0}
 .why p:last-child,.exam p:last-child,.trap p:last-child,.ex p:last-child,.key p:last-child,.ana p:last-child,.goal p:last-child{margin-bottom:0}
 .goal ul{margin-bottom:0}
-.key .enp{color:#F3DCE4}.key .term,.key .term.opt{border-bottom-color:#fff}.key .term2{border-bottom-color:#F3DCE4}
+.key .enp{color:#DCE5F8}.key .term,.key .term.opt{border-bottom-color:#fff}.key .term2{border-bottom-color:#DCE5F8}
 .enp{font-weight:400;font-style:italic;color:var(--mut);font-size:.94em}
 figure{margin:1.6em 0;padding:18px;background:var(--panel);border-radius:var(--r);box-shadow:var(--sh)}
 .fb figure{padding:0;box-shadow:none;background:none;margin:.4em 0}
@@ -127,7 +128,7 @@ figcaption{font-size:16.5px;color:var(--mut);margin-top:10px}
 .seg button.on{background:var(--acc);border-color:var(--acc);color:var(--panel)}
 .btn{text-decoration:none;display:inline-block}
 .btn:hover,.seg button:hover{border-color:var(--acc);box-shadow:var(--sh)}
-.btn.pri{background:var(--acc);color:var(--panel);border-color:var(--acc);box-shadow:0 3px 10px rgba(162,59,91,.28)}
+.btn.pri{background:var(--acc);color:var(--panel);border-color:var(--acc);box-shadow:0 3px 10px rgba(47,91,211,.28)}
 .btn:disabled{opacity:.45;cursor:default;box-shadow:none}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--opt);outline-offset:2px}
 .wg-s{padding:12px 18px;overflow-x:auto}
@@ -220,7 +221,7 @@ textarea{width:100%;min-height:100px;font:400 18px/1.4 var(--sans);padding:11px 
 }
 @media (max-width:860px){
  #side{transform:translateX(-100%);transition:transform .18s;box-shadow:none}
- #side.open{transform:none;box-shadow:0 0 30px rgba(109,46,70,.3)}
+ #side.open{transform:none;box-shadow:0 0 30px rgba(31,58,138,.3)}
  #menuBtn{left:10px;top:12px}
  body.side-open #menuBtn{left:min(282px,calc(100vw - 48px))}
  #main{overflow-x:clip;margin-left:0;padding-top:64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
